@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Meta information for the webpage, including character encoding, title, and viewport settings -->
+        <meta charset="utf-8"> <!-- Specify character encoding to UTF-8 for proper text representation -->
+        <title>Learning JavaScript with Clerise</title> <!-- Set the title of the webpage -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- Configure viewport for responsive design -->
+
+        <!-- Favicon -->
+        <link href="img/icon.png" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+         <!-- This section represents the top bar of the webpage -->
+         <div class="container-fluid d-none d-lg-block">
+            <div class="row align-items-center py-4 px-xl-5">
+                
+                <!-- This column takes up 3 units of the 12-column grid on large screens. -->
+                <div class="col-lg-3">
+                    
+                    <!-- This anchor tag creates a hyperlink -->
+                    <a href="" class="text-decoration-none">
+                        
+                        <!-- This heading represents the main title of the top bar -->
+                        <h1 class="m-0">
+                            <!-- This span adds a blue color to the word "Learn" within the title -->
+                            <span class="text-primary">Learn</span> Javascript
+                        </h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Top bar section -->
+
+         <!-- Navbar Start -->
+        <div class="container-fluid">
+            <!-- This row creates a horizontal section with a top border, using extra padding on larger screens -->
+            <div class="row border-top px-xl-5">
+                
+                <!-- This column takes up 9 units of the 12-column grid on large screens -->
+                <div class="col-lg-9">
+                    
+                    <!-- This navigation bar is designed to expand on larger screens, with a light background and light-colored elements -->
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                        
+                        <!-- This div contains the collapsible navigation menu items, positioned between the left and right sections -->
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            
+                            <!-- This div contains the navigation links, displayed horizontally without any additional padding -->
+                            <div class="navbar-nav py-0">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="course-main.html" class="nav-item nav-link">Course</a>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+                <!-- This column, visible on large screens only, contains a collapsible vertical navigation menu for course contents -->
+            <div class="col-lg-3 d-none d-lg-block">
+                
+                <!-- This anchor tag serves as the header of the collapsible menu, with a background color, padding, and an icon -->
+                <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Course Contents</h5>
+                    <i class="fa fa-angle-down text-primary"></i>
+                </a>
+                
+                <!-- This collapsible navigation menu contains links to different sections of the course -->
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
+                    <div class="navbar-nav w-100">
+                        
+                        <!-- Dropdown menu item for the "Basics of JavaScript" section -->
+                        <div class="nav-item dropdown">
+                            <a href="course-main.html" class="nav-link" data-toggle="dropdown">Basics of JavaScript <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="variables.html" class="dropdown-item">Variables</a>
+                                <a href="conditional-statements.html" class="dropdown-item">Conditional Statements</a>
+                                <a href="arrays-loops.html" class="dropdown-item">Arrays and Loops</a>
+                                <a href="maps.html" class="dropdown-item">Maps</a>
+                                <a href="built-in-func.html" class="dropdown-item">Built-in Functions</a>
+                                <a href="user-def-func.html" class="dropdown-item">User-defined Functions</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown menu item for the "Events" section -->
+                        <div class="nav-item dropdown">
+                            <a href="course-main.html" class="nav-link" data-toggle="dropdown">Events <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="dom-manip.html" class="dropdown-item">DOM Manipulation</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown menu item for the "JQuery" section -->
+                        <div class="nav-item dropdown">
+                            <a href="course-main.html" class="nav-link" data-toggle="dropdown">JQuery <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="functions.html" class="dropdown-item">Functions</a>
+                                <a href="selectors.html" class="dropdown-item">Selectors</a>
+                                <a href="creating-appending.html" class="dropdown-item">Create & Append Elements</a>
+                                <a href="separate-scripting.html" class="dropdown-item">Separate Scripting Files</a>
+                                <a href="events-effects.html" class="dropdown-item">Events and Effects</a>
+                                <a href="effect-chaining.html" class="dropdown-item">Effect Chaining</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div> 
+        </div>
+        <!-- Navbar End -->
+
+        <!-- This section defines the header of the webpage. It contains a fluid container spanning the width of the viewport with a bottom margin of 90 pixels -->
+        <div class="container-fluid page-header" style="margin-bottom: 90px;">
+            <div class="container">
+                <!-- Within this container, a flexbox layout is used to vertically center the content. The minimum height of the flex container is set to 300 pixels -->
+                <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                    <!-- An attention-grabbing heading for the course overview section, displayed with a large font size. The text is in white and converted to uppercase for emphasis -->
+                    <h3 class="display-4 text-white text-uppercase">Course Overview</h3>
+                    <!-- A horizontal navigation path displayed in a row. It starts with a link to the homepage, followed by a right-pointing double angle icon, and then the label "Courses". All text is in white -->
+                    <div class="d-inline-flex text-white">
+                        <!-- A link to the homepage, labeled "Home", styled in white. -->
+                        <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                        <!-- An icon indicating a continuation in the navigation path, resembling a right-pointing double angle. Positioned with padding for visual spacing -->
+                        <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                        <!-- The label "Courses" in uppercase, indicating the current page within the navigation path -->
+                        <p class="m-0 text-uppercase">Courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header -->
+
+        <!-- This section introduces a container-fluid element for the course categories -->
+        <div class="container-fluid py-5">
+            <!-- A nested container to manage content alignment and further spacing -->
+            <div class="container pt-5 pb-3">
+                <!-- A centered text section at the top, indicating an overview of the course categories -->
+                <div class="text-center mb-5">
+                    <!-- A blue, uppercase heading with increased letter spacing, providing emphasis -->
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Overview</h5>
+                    <!-- A large, bold heading inviting users to explore the subjects presented in the course -->
+                    <h1>Explore the Subjects Presented in this Course</h1>
+                </div>
+                <!-- A row containing multiple columns, each representing a different course category -->
+                <div class="row justify-content-center">
+                    <!-- The first course category column, utilizing Bootstrap's grid system to adapt to different screen sizes -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <!-- A container for the course category item, including an image and text overlay. It has rounded corners and allows for overflow to create an appealing visual effect -->
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <!-- An image representing the category, displayed with fluid dimensions -->
+                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                            <!-- An overlay element with white text, serving as a link to the category's details -->
+                            <a class="cat-overlay text-white text-decoration-none" href="">
+                                <!-- A bold, white heading for the category -->
+                                <h4 class="text-white font-weight-medium">Basics of JavaScript</h4>
+                                <!-- A brief description indicating the number of courses available in this category -->
+                                <span>6 Courses</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Similar structure for the second course category column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                            <a class="cat-overlay text-white text-decoration-none" href="">
+                                <h4 class="text-white font-weight-medium">Events</h4>
+                                <span>1 Course</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Similar structure for the third course category column -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                            <a class="cat-overlay text-white text-decoration-none" href="">
+                                <h4 class="text-white font-weight-medium">JQuery</h4>
+                                <span>6 Courses</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Category section -->
+
+        <!-- This section represents the footer of the webpage. It includes submission information and navigation links -->
+        <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #348adb !important;">
+            <div class="row">
+                
+                <!-- Left column in the footer, aligned to the left on medium and larger screens -->
+                <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                    
+                    <!-- Submission information for the footer -->
+                    <p class="m-0 text-white">Submission by Clerise Swart<a href="#"> | Student No:</a><a href="https://www.linkedin.com/in/cleriseswart/"> CS22090004416</a>
+                    </p>
+                </div>
+                
+                <!-- Right column in the footer, aligned to the right on medium and larger screens -->
+                <div class="col-lg-6 text-center text-md-right">
+                    
+                    <!-- List of navigation links in the footer -->
+                    <ul class="nav d-inline-flex">
+                        <!-- Home link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="index.html">Home</a>
+                        </li>
+                        <!-- Courses link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="course-main.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Footer section -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

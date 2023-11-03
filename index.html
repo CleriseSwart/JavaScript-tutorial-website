@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Meta information for the webpage, including character encoding, title, and viewport settings -->
+        <meta charset="utf-8"> <!-- Specify character encoding to UTF-8 for proper text representation -->
+        <title>Learning JavaScript with Clerise</title> <!-- Set the title of the webpage -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- Configure viewport for responsive design -->
+
+        <!-- Favicon -->
+        <link href="img/icon.png" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- This section represents the top bar of the webpage -->
+        <div class="container-fluid d-none d-lg-block">
+            <div class="row align-items-center py-4 px-xl-5">
+                
+                <!-- This column takes up 3 units of the 12-column grid on large screens. -->
+                <div class="col-lg-3">
+                    
+                    <!-- This anchor tag creates a hyperlink -->
+                    <a href="" class="text-decoration-none">
+                        
+                        <!-- This heading represents the main title of the top bar -->
+                        <h1 class="m-0">
+                            <!-- This span adds a blue color to the word "Learn" within the title -->
+                            <span class="text-primary">Learn</span> Javascript
+                        </h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Top bar section -->
+
+         <!-- Navbar Start -->
+        <div class="container-fluid">
+            <!-- This row creates a horizontal section with a top border, using extra padding on larger screens -->
+            <div class="row border-top px-xl-5">
+                
+                <!-- This column takes up 9 units of the 12-column grid on large screens -->
+                <div class="col-lg-9">
+                    
+                    <!-- This navigation bar is designed to expand on larger screens, with a light background and light-colored elements -->
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                        
+                        <!-- This div contains the collapsible navigation menu items, positioned between the left and right sections -->
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            
+                            <!-- This div contains the navigation links, displayed horizontally without any additional padding -->
+                            <div class="navbar-nav py-0">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="course-main.html" class="nav-item nav-link">Course</a>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+                <!-- This column, visible on large screens only, contains a collapsible vertical navigation menu for course contents -->
+            <div class="col-lg-3 d-none d-lg-block">
+                
+                <!-- This anchor tag serves as the header of the collapsible menu, with a background color, padding, and an icon -->
+                <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none" data-toggle="collapse" href="#navbar-vertical" style="height: 67px; padding: 0 30px;">
+                    <h5 class="text-primary m-0"><i class="fa fa-book-open mr-2"></i>Course Contents</h5>
+                    <i class="fa fa-angle-down text-primary"></i>
+                </a>
+                
+                <!-- This collapsible navigation menu contains links to different sections of the course -->
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
+                    <div class="navbar-nav w-100">
+                        
+                        <!-- Dropdown menu item for the "Basics of JavaScript" section -->
+                        <div class="nav-item dropdown">
+                            <a href="course-main.html" class="nav-link" data-toggle="dropdown">Basics of JavaScript <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="variables.html" class="dropdown-item">Variables</a>
+                                <a href="conditional-statements.html" class="dropdown-item">Conditional Statements</a>
+                                <a href="arrays-loops.html" class="dropdown-item">Arrays and Loops</a>
+                                <a href="maps.html" class="dropdown-item">Maps</a>
+                                <a href="built-in-func.html" class="dropdown-item">Built-in Functions</a>
+                                <a href="user-def-func.html" class="dropdown-item">User-defined Functions</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown menu item for the "Events" section -->
+                        <div class="nav-item dropdown">
+                            <a href="course-main.html" class="nav-link" data-toggle="dropdown">Events <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="dom-manip.html" class="dropdown-item">DOM Manipulation</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown menu item for the "JQuery" section -->
+                        <div class="nav-item dropdown">
+                            <a href="course-main.html" class="nav-link" data-toggle="dropdown">JQuery <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="functions.html" class="dropdown-item">Functions</a>
+                                <a href="selectors.html" class="dropdown-item">Selectors</a>
+                                <a href="creating-appending.html" class="dropdown-item">Create & Append Elements</a>
+                                <a href="separate-scripting.html" class="dropdown-item">Separate Scripting Files</a>
+                                <a href="events-effects.html" class="dropdown-item">Events and Effects</a>
+                                <a href="effect-chaining.html" class="dropdown-item">Effect Chaining</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div> 
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 pb-5 mb-5">
+            <!-- Header carousel section -->
+            <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#header-carousel" data-slide-to="1"></li>
+                    <li data-target="#header-carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <!-- First carousel item (active) -->
+                    <div class="carousel-item active" style="min-height: 300px;">
+                        <!-- Carousel image -->
+                        <img class="position-relative w-100" src="img/carousel-1.jpg" style="min-height: 300px; object-fit: cover;">
+                        
+                        <!-- Carousel caption -->
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="p-5" style="width: 100%; max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-md-3">The best way to</h5>
+                                <h1 class="display-3 text-white mb-md-4">Learn JavaScript</h1>
+                                <a href="course-main.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">I'm ready</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Second carousel item -->
+                    <div class="carousel-item" style="min-height: 300px;">
+                        <!-- Carousel image -->
+                        <img class="position-relative w-100" src="img/carousel-2.jpg" style="min-height: 300px; object-fit: cover;">
+                        
+                        <!-- Carousel caption -->
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="p-5" style="width: 100%; max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-md-3">The best way to</h5>
+                                <h1 class="display-3 text-white mb-md-4">Learn JavaScript</h1>
+                                <a href="course-main.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">I'm ready</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Third carousel item -->
+                    <div class="carousel-item" style="min-height: 300px;">
+                        <!-- Carousel image -->
+                        <img class="position-relative w-100" src="img/carousel-3.jpg" style="min-height: 300px; object-fit: cover;">
+                        
+                        <!-- Carousel caption -->
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="p-5" style="width: 100%; max-width: 900px;">
+                                <h5 class="text-white text-uppercase mb-md-3">The best way to</h5>
+                                <h1 class="display-3 text-white mb-md-4">Learn JavaScript</h1>
+                                <a href="course-main.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">I'm ready</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- About Start -->
+        <div class="container-fluid py-5">
+            <!-- Container for the about content -->
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <!-- Left column with the image -->
+                    <div class="col-lg-5">
+                        <!-- About Me Image -->
+                        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="About Me">
+                    </div>
+                    <!-- Right column with the text content -->
+                    <div class="col-lg-7">
+                        <div class="text-left mb-4">
+                            <!-- Section Heading -->
+                            <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Me</h5>
+                            <h1>Submission by Clerise Swart</h1>
+                        </div>
+                        <!-- Personal Introduction -->
+                        <p>Hi, I'm Clerise, a Level 4 Full Stack Web Development and Software Engineering student at Hyperion Development.
+                            This is my submission for L4T13!
+                        </p>
+                        <!-- Link to Learn More -->
+                        <a href="https://www.linkedin.com/in/cleriseswart/" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Overview Section Start -->
+        <div class="container-fluid py-5">
+            <!-- Outer container with padding and full-width background -->
+            <div class="container pt-5 pb-3">
+                <!-- Nested container for content alignment and spacing -->
+                <div class="text-center mb-5">
+                    <!-- Text heading with primary color and uppercase style -->
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Overview</h5>
+                    <!-- Main title for the section -->
+                    <h1>Explore the Subjects Presented in this Course</h1>
+                </div>
+                <!-- Row for displaying subject categories -->
+                <div class="row justify-content-center">
+                    <!-- Column for the first subject category -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <!-- Category item with position-relative and overflow-hidden styles -->
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <!-- Category image -->
+                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                            <!-- Category overlay with link -->
+                            <a class="cat-overlay text-white text-decoration-none" href="">
+                                <!-- Category title with font-weight and white color -->
+                                <h4 class="text-white font-weight-medium">Basics of JavaScript</h4>
+                                <!-- Number of courses in the category -->
+                                <span>6 Courses</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Column for the second subject category -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <!-- Category item with position-relative and overflow-hidden styles -->
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <!-- Category image -->
+                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                            <!-- Category overlay with link -->
+                            <a class="cat-overlay text-white text-decoration-none" href="">
+                                <!-- Category title with font-weight and white color -->
+                                <h4 class="text-white font-weight-medium">Events</h4>
+                                <!-- Number of courses in the category -->
+                                <span>1 Course</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Column for the third subject category -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <!-- Category item with position-relative and overflow-hidden styles -->
+                        <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                            <!-- Category image -->
+                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                            <!-- Category overlay with link -->
+                            <a class="cat-overlay text-white text-decoration-none" href="">
+                                <!-- Category title with font-weight and white color -->
+                                <h4 class="text-white font-weight-medium">JQuery</h4>
+                                <!-- Number of courses in the category -->
+                                <span>6 Courses</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Overview Section End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+            <!-- Outer container for the entire testimonial section -->
+            <div class="container py-5">
+                <div class="row align-items-center">
+                    <!-- Nested container for the testimonial carousel -->
+                    <div class="container-fluid py-5">
+                        <div class="container py-5">
+                            <div class="text-center mb-5">
+                                <!-- Testimonial Section Heading -->
+                                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; color:#348adb !important;">Testimonial</h5>
+                                <h1 style="color: white !important;">What Say Our Students</h1>
+                            </div>
+                            <!-- Testimonial Carousel Container -->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Carousel for Testimonials -->
+                                    <div class="owl-carousel testimonial-carousel">
+                                        <!-- Testimonial 1 -->
+                                        <div class="text-center">
+                                            <!-- Quotation Icon -->
+                                            <i class="fa fa-3x fa-quote-left text-primary mb-4" style="color: white !important;"></i>
+                                            <!-- Testimonial Content -->
+                                            <h4 class="font-weight-normal mb-4" style="color: white !important;">The courses provided by this platform have exceeded my expectations. The instructor is an experienced professional who provides clear explanations and practical examples. The interactive learning environment has helped me grasp complex concepts easily. I highly recommend these courses to anyone looking to enhance their technical skills.</h4>
+                                            <!-- Testimonial Author Image -->
+                                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
+                                            <!-- Testimonial Author Name -->
+                                            <h5 class="m-0" style="color: white !important;">Michael Jooste</h5>
+                                            <!-- Testimonial Author Role -->
+                                            <span style="color: white !important;">Data Analyst</span>
+                                        </div>
+                                        <!-- Testimonial 2 -->
+                                        <div class="text-center">
+                                            <!-- Quotation Icon -->
+                                            <i class="fa fa-3x fa-quote-left text-primary mb-4" style="color: white !important;"></i>
+                                            <!-- Testimonial Content -->
+                                            <h4 class="font-weight-normal mb-4"style="color: white !important;">I am extremely satisfied with the courses offered by this platform. The instructor is knowledgeable and delivers the content in an engaging manner. The course materials are comprehensive and easy to understand. I have learned valuable skills that have greatly enhanced my programming abilities.</h4>
+                                            <!-- Testimonial Author Image -->
+                                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
+                                            <!-- Testimonial Author Name -->
+                                            <h5 class="m-0" style="color: white !important;">Emma Johnson</h5>
+                                            <!-- Testimonial Author Role -->
+                                            <span style="color: white !important;">Software Engineer</span>
+                                        </div>
+                                        <!-- Testimonial 3 -->
+                                        <div class="text-center">
+                                            <!-- Quotation Icon -->
+                                            <i class="fa fa-3x fa-quote-left text-primary mb-4" style="color: white !important;"></i>
+                                            <!-- Testimonial Content -->
+                                            <h4 class="font-weight-normal mb-4" style="color: white !important;">I can confidently say that taking courses on this platform has been a game-changer for me. The course content is well-structured, and the step-by-step approach has made learning enjoyable and effective. The support from the instructors and the community is remarkable. Thanks to these courses, I have been able to advance my career in web development.</h4>
+                                            <!-- Testimonial Author Image -->
+                                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
+                                            <!-- Testimonial Author Name -->
+                                            <h5 class="m-0" style="color: white !important;">Sam Black</h5>
+                                            <!-- Testimonial Author Role -->
+                                            <span style="color: white !important;">Web Developer
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- This section displays the team or mentor information with their images and details -->
+        <div class="container-fluid py-5">
+            <div class="container pt-5 pb-3">
+                <div class="text-center mb-5">
+                    <!-- Subtitle indicating the team section, styled with blue color and uppercase letters with increased letter spacing -->
+                    <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Team</h5>
+                    <!-- Main title introducing the Mentor -->
+                    <h1>Meet The Mentor</h1>
+                </div>
+                
+                <!-- A row with centered content to display the mentor -->
+                <div class="row justify-content-center">
+                    
+                    <!-- Column for a single team member's information -->
+                    <div class="col-md-6 col-lg-3 text-center team mb-4">
+                        <!-- Container for the team member's item, with rounded corners and overflow handling -->
+                        <div class="team-item rounded overflow-hidden mb-2">
+                            <!-- Container for the team member's image, positioned relatively -->
+                            <div class="team-img position-relative">
+                                <!-- Image of the team member -->
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            </div>
+                            <!-- Background with secondary color for the team member's details -->
+                            <div class="bg-secondary p-4">
+                                <!-- Team member's name -->
+                                <h5>Clerise Swart</h5>
+                                <!-- Description or role of the team member -->
+                                <p class="m-0">Professional Procrastinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Team section -->
+
+        <!-- This section represents the footer of the webpage. It includes submission information and navigation links -->
+        <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #348adb !important;">
+            <div class="row">
+                
+                <!-- Left column in the footer, aligned to the left on medium and larger screens -->
+                <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                    
+                    <!-- Submission information for the footer -->
+                    <p class="m-0 text-white">Submission by Clerise Swart<a href="#"> | Student No:</a><a href="https://www.linkedin.com/in/cleriseswart/"> CS22090004416</a>
+                    </p>
+                </div>
+                
+                <!-- Right column in the footer, aligned to the right on medium and larger screens -->
+                <div class="col-lg-6 text-center text-md-right">
+                    
+                    <!-- List of navigation links in the footer -->
+                    <ul class="nav d-inline-flex">
+                        <!-- Home link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="index.html">Home</a>
+                        </li>
+                        <!-- Courses link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-0" href="course-main.html">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Footer section -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,122 @@
+/* Style the header section with a grey background and padding */
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+/* Style the links within the header */
+.header a {
+    float: left; /* Float the links to the left to create a horizontal navigation */
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo link */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Change background and text color on mouse-over */
+.header a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Change text color to black on hover */
+}
+
+/* Style the active/current link */
+.header a.active {
+    background-color: dodgerblue; /* Blue background for active link */
+    color: white; /* White text color for active link */
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right; /* Float the right-aligned section to the right */
+}
+
+/* Style the logo image */
+.header img {
+    float: left; /* Float the logo image to the left */
+    width: 100px;
+    height: 100px;
+}
+
+/* Style the header h1 */
+.header h1 {
+    position: relative; /* Use relative positioning for text placement */
+    top: 18px; /* Adjust the vertical position */
+    left: 10px; /* Adjust the horizontal position */
+}
+
+/* Set the font family for the entire body */
+body {
+    font-family: "Audiowide", sans-serif;
+}
+
+/* Style for the dropdown button */
+.dropbtn {
+    background-color: #04AA6D; /* Green background color */
+    color: white; /* White text color */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Positioning for the dropdown container */
+.dropdown {
+    position: relative; /* Use relative positioning for the container */
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute; /* Use absolute positioning to position the content */
+    background-color: #f1f1f1; /* Light grey background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow effect */
+    z-index: 1; /* Set a higher z-index to ensure content appears on top of other elements */
+}
+
+/* Style for links inside the dropdown content */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Display the content when hovering over the dropdown */
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; /* Dark green background on hover */
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less */
+@media screen and (max-width: 500px) {
+    /* Stack the header links vertically */
+    .header a {
+        float: none; /* Remove the float to stack links vertically */
+        display: block; /* Change display to block for vertical stacking */
+        text-align: left; /* Align text to the left for better readability */
+    }
+    
+    /* Adjust positioning for the header-right section */
+    .header-right {
+        float: none; /* Remove the float for proper alignment */
+    }
+}
